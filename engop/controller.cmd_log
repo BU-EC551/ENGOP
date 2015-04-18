@@ -1,0 +1,10 @@
+vhdtdtfi -lib work X:/gxstv/Desktop/engop/engop/controller.v -lang verilog -prj engop -o controller.spl -module controller -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 controller.spl X:/gxstv/Desktop/engop/engop/controller.sym 
+vhdtdtfi -lib work X:/gxstv/Desktop/engop/engop/controller.v -lang verilog -prj engop -o controller.spl -module controller -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 controller.spl X:/gxstv/Desktop/engop/engop/controller.sym 
+vhdtdtfi -lib work X:/gxstv/Desktop/engop/engop/controller.v -lang verilog -prj engop -o controller.spl -module controller -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 controller.spl X:/gxstv/Desktop/engop/engop/controller.sym 
+vhdtdtfi -lib work X:/gxstv/Desktop/engop/engop/controller.v -lang verilog -prj engop -o controller.spl -module controller -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w controller.spl X:/gxstv/Desktop/engop/engop/controller.sym 
+vhdtdtfi -lib work X:/gxstv/Desktop/engop/engop/controller.v -lang verilog -prj engop -o controller.spl -module controller -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w controller.spl X:/gxstv/Desktop/engop/engop/controller.sym 

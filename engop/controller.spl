@@ -1,0 +1,12 @@
+[Inputs]
+clk
+released
+=data[7:0]=
+[Outputs]
+motor1
+motor2
+motor3
+[BiDir]
+[ATTRIBUTES]
+VeriModel controller
+
