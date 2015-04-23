@@ -1,0 +1,53 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.2
+//  \   \         Application : sch2hdl
+//  /   /         Filename : motortop.vf
+// /___/   /\     Timestamp : 04/17/2015 19:08:47
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog X:/gxstv/Desktop/engop/engop/motortop.vf -w X:/gxstv/Desktop/engop/engop/motortop.sch
+//Design Name: motortop
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module motortop(clk, 
+                clkusb, 
+                data, 
+                led, 
+                motor1, 
+                motor2, 
+                motor3);
+
+    input clk;
+    input clkusb;
+    input data;
+   output [7:0] led;
+   output motor1;
+   output motor2;
+   output motor3;
+   
+   wire XLXN_3;
+   wire [7:0] led_DUMMY;
+   
+   assign led[7:0] = led_DUMMY[7:0];
+   keyboardtest  XLXI_2 (.clk(clkusb), 
+                        .data(data), 
+                        .led(led_DUMMY[7:0]), 
+                        .released(XLXN_3));
+   controller  XLXI_3 (.clk(clk), 
+                      .data(led_DUMMY[7:0]), 
+                      .released(XLXN_3), 
+                      .motor1(motor1), 
+                      .motor2(motor2), 
+                      .motor3(motor3));
+endmodule
