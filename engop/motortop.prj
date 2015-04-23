@@ -1,0 +1,3 @@
+verilog work "keyboardtest.v"
+verilog work "controller.v"
+verilog work "motortop.vf"
