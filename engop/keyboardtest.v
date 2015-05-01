@@ -1,7 +1,7 @@
 module keyboardtest( 
 input wire clk, // Clock pin form keyboard 
 input wire data, //Data pin form keyboard 
-output reg released,
+output reg [1:0]released,
 output reg [7:0] led //Printing input data to led 
 ); 
  reg [7:0] data_curr; 
@@ -53,28 +53,26 @@ begin
 	begin
 		if (mark!=0)
 		begin
-			if (data_curr==8'h24)
+			if (data_curr==8'h2d)//r for auto mode
 			begin
 			released=1;
 			end
-			if (data_curr==8'h2d)
+			if (data_curr==8'h2c)//t for record mode
+			begin
+			released=2;
+			end
+			if (data_curr==8'h35)//y for manual mode
 			begin
 			released=0;
 			end
 			led<=data_curr;
 		end
-		else 
+		else
 			led<=8'hff;
- //led<=data_pre; 
- //released=1;
 	end
 	else
 	begin
-	//if (data_curr==8'h24)
-	//released=1;
-	//else
-	//released=0;
-	mark=0;
+		mark=0;
 	end
 end
 

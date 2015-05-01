@@ -1,11 +1,26 @@
 [Inputs]
 clk
-released
 =data[7:0]=
+=released[1:0]=
 [Outputs]
 motor1
 motor2
 motor3
+motor4
+motor5
+motor6
+motor7
+motor8
+motor9
+motor10
+wheel1
+wheel2
+wheel3
+wheel4
+wheel5
+wheel6
+wheel7
+wheel8
 [BiDir]
 [ATTRIBUTES]
 VeriModel controller

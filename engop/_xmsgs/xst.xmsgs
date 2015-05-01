@@ -8,8 +8,13 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\g\x\gxstv\gxstv\Desktop\engop\engop\keyboardtest.v" Line 40: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\g\x\gxstv\gxstv\Desktop\engop\engop\controller.v" Line 246: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\g\x\gxstv\gxstv\Desktop\engop\engop\controller.v" Line 260: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\g\x\gxstv\gxstv\Desktop\engop\engop\controller.v" Line 472: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
 </messages>
-

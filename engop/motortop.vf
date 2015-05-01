@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.2
 //  \   \         Application : sch2hdl
 //  /   /         Filename : motortop.vf
-// /___/   /\     Timestamp : 04/17/2015 19:08:47
+// /___/   /\     Timestamp : 04/26/2015 15:35:14
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan6 -verilog X:/gxstv/Desktop/engop/engop/motortop.vf -w X:/gxstv/Desktop/engop/engop/motortop.sch
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /ad/eng/users/g/x/gxstv/gxstv/Desktop/engop/engop/motortop.vf -w /ad/eng/users/g/x/gxstv/gxstv/Desktop/engop/engop/motortop.sch
 //Design Name: motortop
 //Device: spartan6
 //Purpose:
@@ -26,7 +26,22 @@ module motortop(clk,
                 led, 
                 motor1, 
                 motor2, 
-                motor3);
+                motor3, 
+                motor4, 
+                motor5, 
+                motor6, 
+                motor7, 
+                motor8, 
+                motor9, 
+                motor10, 
+                wheel1, 
+                wheel2, 
+                wheel3, 
+                wheel4, 
+                wheel5, 
+                wheel6, 
+                wheel7, 
+                wheel8);
 
     input clk;
     input clkusb;
@@ -35,19 +50,49 @@ module motortop(clk,
    output motor1;
    output motor2;
    output motor3;
+   output motor4;
+   output motor5;
+   output motor6;
+   output motor7;
+   output motor8;
+   output motor9;
+   output motor10;
+   output wheel1;
+   output wheel2;
+   output wheel3;
+   output wheel4;
+   output wheel5;
+   output wheel6;
+   output wheel7;
+   output wheel8;
    
-   wire XLXN_3;
+   wire [1:0] XLXN_4;
    wire [7:0] led_DUMMY;
    
    assign led[7:0] = led_DUMMY[7:0];
    keyboardtest  XLXI_2 (.clk(clkusb), 
                         .data(data), 
                         .led(led_DUMMY[7:0]), 
-                        .released(XLXN_3));
+                        .released(XLXN_4[1:0]));
    controller  XLXI_3 (.clk(clk), 
                       .data(led_DUMMY[7:0]), 
-                      .released(XLXN_3), 
+                      .released(XLXN_4[1:0]), 
                       .motor1(motor1), 
                       .motor2(motor2), 
-                      .motor3(motor3));
+                      .motor3(motor3), 
+                      .motor4(motor4), 
+                      .motor5(motor5), 
+                      .motor6(motor6), 
+                      .motor7(motor7), 
+                      .motor8(motor8), 
+                      .motor9(motor9), 
+                      .motor10(motor10), 
+                      .wheel1(wheel1), 
+                      .wheel2(wheel2), 
+                      .wheel3(wheel3), 
+                      .wheel4(wheel4), 
+                      .wheel5(wheel5), 
+                      .wheel6(wheel6), 
+                      .wheel7(wheel7), 
+                      .wheel8(wheel8));
 endmodule

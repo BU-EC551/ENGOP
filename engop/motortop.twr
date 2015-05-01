@@ -37,7 +37,7 @@ Setup/Hold to clock clkusb
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-data        |    2.414(F)|      SLOW  |   -1.351(F)|      FAST  |clkusb_BUFGP      |   0.000|
+data        |    2.274(F)|      SLOW  |   -1.191(F)|      FAST  |clkusb_BUFGP      |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -45,7 +45,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.699|         |         |         |
+clk            |    3.479|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clkusb
@@ -53,18 +53,18 @@ Clock to Setup on destination clock clkusb
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clkusb         |         |         |         |    2.141|
+clkusb         |         |         |         |    2.570|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Apr 17 20:25:27 2015 
+Analysis completed Sat Apr 25 15:58:11 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 219 MB
+Peak Memory Usage: 284 MB
 
 
 
