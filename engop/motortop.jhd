@@ -1,5 +1,0 @@
-MODULE motortop
-	SUBMODULE controller
-		INSTANCE XLXI_3
-	SUBMODULE keyboardtest
-		INSTANCE XLXI_2

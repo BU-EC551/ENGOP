@@ -1,2 +1,0 @@
-vhdtdtfi -lib work X:/gxstv/Desktop/engop/engop/keyboardtest.v -lang verilog -prj engop -o keyboardtest.spl -module keyboardtest -template C:/Xilinx/14.2/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan6 -w keyboardtest.spl X:/gxstv/Desktop/engop/engop/keyboardtest.sym 
